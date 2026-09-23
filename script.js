@@ -157,26 +157,3 @@ if (backToTop) {
 }
 
 
-/* =========================
-   CONTACT FORM
-========================= */
-
-const contactForm = document.querySelector(".contact-form");
-const formMessage = document.querySelector(".form-message");
-
-if (contactForm && formMessage) {
-
-    contactForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        formMessage.textContent =
-            "Thank you! Your message has been received.";
-
-        formMessage.classList.add("show");
-
-        contactForm.reset();
-
-    });
-
-}
