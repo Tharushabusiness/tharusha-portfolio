@@ -481,7 +481,7 @@
 
                     <div class="contact-details">
 
-                        <a href="tharushamadhushanbusiness@gmail.com" class="contact-item">
+                        <a href="mailto:tharushamadhushanbusiness@gmail.com" class="contact-item">
                             <span class="contact-icon">✉</span>
                             <span>tharushamadhushanbusiness@gmail.com</span>
                         </a>
@@ -522,23 +522,38 @@
                 </div>
 
 
-                <form class="contact-form">
+                <form
+                    class="contact-form"
+                    action="https://formspree.io/f/mkjgbwrw"
+                    method="POST"
+                >
 
-                    <input type="text" placeholder="Your Name" required>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        >
 
-                    <input type="email" placeholder="Your Email" required>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                        >
 
-                    <textarea
-                        placeholder="Your Message"
-                        rows="6"
-                        required
-                    ></textarea>
+                        <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            rows="6"
+                            required
+                        ></textarea>
 
-                    <button type="submit" class="btn primary-btn">
-                        Send Message
-                    </button>
+                        <button type="submit" class="btn primary-btn">
+                            Send Message
+                        </button>
 
-                    <p class="form-message"></p>
+                        <p class="form-message"></p>
 
                 </form>
 
